@@ -80,4 +80,5 @@ button:active{
     border: 2px solid black;
     width: 35%;
     height: 40%;
+    font-size: 1.3rem;
 }
