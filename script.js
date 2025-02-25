@@ -39,7 +39,7 @@ function collectNames() {
     localStorage.setItem("playerNames", JSON.stringify(playerNames));
 
     // Redirect to the game page
-    window.location.href = "index.html";
+    window.location.href = "indexopen.html";
 }
 
 // Add event listeners for player selection buttons
@@ -50,20 +50,20 @@ document.querySelectorAll(".xyzz").forEach(button => {
 });
 
 // Check if we are on the game page
-if (window.location.pathname.includes("index.html")) {
+if (window.location.pathname.includes("indexopen.html")) {
     let players = JSON.parse(localStorage.getItem("playerNames")) || [];
     let numPlayers = players.length;
 
     if (numPlayers < 2 || numPlayers > 4) {
         alert("Invalid player selection. Redirecting to home...");
-        window.location.href = "indexopen.html";
+        window.location.href = "index.html";
     }
 
     // Initialize player health (3 for each player)
     let playerHealth = {};
     players.forEach(player => playerHealth[player] = 3);
 
-    // List of 100 dares
+    // List of dares
     const dares = [
         "Sing a song loudly.", "Do 10 pushups.", "Dance for 30 seconds.",
         "Speak in a funny accent for 1 minute.", "Spin around 10 times and walk straight.",
