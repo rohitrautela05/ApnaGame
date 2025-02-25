@@ -1,0 +1,153 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #87CEEB, #B0E0E6);
+    font-family: 'Poppins', sans-serif;
+}
+
+#gamename {
+    font-size: 60px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.everything {
+    margin: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game {
+    border: 2px solid black;
+    height: auto;
+    width: 90%;
+    max-width: 800px;0
+    align-self: center;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.health {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.player {
+    background-color: #578fca;
+    height: 100%;
+    flex: 1;
+    min-width: 150px;
+    max-width: 170px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 5px;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+.player:hover {
+    background-color: #3a6c9e;
+}
+
+.whoseturn {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    height: 55px;
+    margin: 1% auto;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 55px;
+    background: #F8F8F8;
+    font-weight: bold;
+}
+
+.task {
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin: 1% auto;
+    font-size: 1.5rem;
+    background: #F8F8F8;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #555;
+}
+
+.yourtask {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buttonn {
+    font-size: 2.5rem;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid black;
+    min-width: 120px;
+}
+
+.buttonn:hover{
+    transform: scale(1.05);
+}
+
+.buttonn:active{
+    transform: scale(0.95);
+}
+
+#pass{
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#pass:hover {
+    background-color: #cc0000;
+}
+
+#did{
+    background-color: #4caf50;
+    color: white;
+}
+
+#did:hover {
+    background-color: #2e7d32;
+}
